@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+/* criando variaveis em CSS */
+:root {
+    --corfundo01: darkgray;
+    --corfundo02: black;
+    --corfundo03: white;
+    --corfundo04: rgb(51, 51, 51);
+    --corfundo05: rgb(0, 0, 0, 0.520);
+
+    --cordafont01: white;
+    --cordafont02: black;
+
+    --font01: Verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Passion One', cursive;
+    --font03: 'Sriracha', cursive;
+}
+
+
+/* configurações iniciais para resetar todos os elementos  */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html,
+body {
+    /* tamanho mínimo do corpo do meu html vai ser 100% da minha view port  */
+    min-height: 100vh;
+    /* se estivéssemos falando da largura seria vw  */
+    background-color: var(--corfundo01);
+    font-family: var(--font01);
+}
+
+header {
+    background-color: var(--corfundo02);
+    color: var(--cordafont01);
+    /* para conteúdo ficar centralizado dento do header */
+    text-align: center;
+    font-family: var(--font02);
+
+}
+
+header>h1 {
+    padding-top: 50px;
+    /* colocar tudo em letras maiusculas */
+    /* text-transform: uppercase;  */
+
+    /* já com a propriedade abaixo, todas as letras ficam no formato maiuscula mas pequena com as iniciais em destaque */
+    font-variant: small-caps;
+
+    /* Configurando 4x mais o tamanho base tamanho original  */
+    /* font-size: 4em; */
+    /*ou uma opção conforme notação abaixo  
+     onde  a fonte obdece ao tamanho da tela em 10% por exemplo*/
+     font-size: 10vw;
+
+
+}
+
+header>p {
+    padding-bottom: 50px;
+}
+
+header a,
+footer a {
+    color: var(--cordafont01);
+    /* tira o sublinhado*/
+    text-decoration: none;
+    font-weight: bolder;
+    /* negrito na font*/
+}
+
+header a:hover,
+footer a:hover {
+    /* coloca o sublinhado*/
+    text-decoration: underline;
+
+}
+
+/* essa configura serve para todas as section */
+section {
+    padding-top: 10vh;
+    /* vai ganhar 10% da altura e acompnha redimencionamento da tela*/
+    padding-bottom: 10vh;
+    line-height: 2em;
+    /* aumenta o espaco entre as linhas*/
+    padding-left: 30px;
+    font-family: var(--font03);
+    /* font-size: 2em; */
+    font-size: 3.5vw;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+/* a notação abaixo trata-se da classe "normal" em section */
+section.normal {
+    background-color: var(--corfundo03);
+    color: var(--cordafont02);
+}
+
+section.imagem {
+    background-color: var(--corfundo04);
+    color: var(--cordafont01);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
+    background-size: cover;
+    /* nesse caso ele mantém fixo a imagem */
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    /*width: 400px;  ao invez de manter um tamanho fixo uso o recurso abaixo*/ 
+    display: inline-block; /* caixa que se adapta ao tamanho do conteudo que tem dentro dela*/
+    padding: 5px;
+    background-color: var(--corfundo05);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    /* abaixo a notação garante que a imagem ocupará o contêiner inteiro */
+}
+
+footer {
+    background-color: var(--corfundo02);
+    color: var(--cordafont01);
+    /* para conteúdo ficar centralizado dento do header */
+    text-align: center;
+}
