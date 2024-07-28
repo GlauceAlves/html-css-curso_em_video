@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inicial-1.0">
+    <!-- <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">-->
+
+    <!---limpar configurações do navegador-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Tabela Númerica, parte 1 do desafio</h2>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Tabela Alfabética, parte 2 do desafio</h2>
+            <table>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td colspan="4">N</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Tabela de Filmes, parte 3 do desafio </h2>
+            <table class="g">
+                <thead>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="3">Filmes</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Mulheres</th>
+                        <td class="nome">Ana Maria Santos</td>
+                        <td>Alien</td>
+                        <td>Rambo</td>
+                        <td>Avengers</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Beatriz Souza</td>
+                        <td>Hulk</td>
+                        <td>Inception</td>
+                        <td>Batman</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Claudia Melo</td>
+                        <td>Oblivion</td>
+                        <td>Matrix</td>
+                        <td>Big Hero</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Homes</th>
+                        <td class="nome">Bruno Mendonça</td>
+                        <td>Imortals</td>
+                        <td>Aminésia</td>
+                        <td>Gladiador</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Daniel Lorenço</td>
+                        <td>Wall-E</td>
+                        <td>Oldboy</td>
+                        <td>Dangal</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Fabiano Motta</td>
+                        <td>Star Wars 5</td>
+                        <td>Taxi Drive</td>
+                        <td>Toy Story</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row" colspan="4">Total</th>
+                    <td>1000</td>
+                </tfoot>
+            </table>
+        </div>
+
+        <div>
+            <h2>Tabela de Disciplinas, parte 4 do desafio</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Área</th>
+                        <th scope="col" rowspan="2">Disciplinas</th>
+                        <th scope="colgroup" colspan="2">Notas</th>
+                        <th scope="col" rowspan="2">Média</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Nota 1</th>
+                        <th scope="col">Nota 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">Exatas</th>
+                        <td class="nome">Matemática</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Física</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Quimica</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Biologia</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th class="r" scope="row" colspan="4">Média de Exatas</th>
+                        <td class="m">3,5</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Humanas</th>
+                        <td class="nome">Histporia</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td class="nome">Geografia</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <th class="r" scope="row" colspan="4">Média de Humanas</th>
+                        <td class="m">4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</body>
+
+</html>

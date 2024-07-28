@@ -1,0 +1,32 @@
+div {
+    margin: 50px;
+}
+
+
+table {
+    width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  table .nome {
+    text-align: left;
+  }
+  
+  .r, .m, thead {
+    background-color: darkgrey;
+  }
+  
+  .r {
+    text-align: left;
+  }
+  
+  .g {
+    width: 800px;
+  }
+  
+  /*# sourceMappingURL=indice.css.map */
+  

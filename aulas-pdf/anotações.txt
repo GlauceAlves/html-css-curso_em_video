@@ -1,0 +1,10 @@
+Emmet cheat sheet
+table>thead>tr>th{Estado}+th{População}^^tbody>(tr>td{São Paulo}+td{45 919 049})*10^tfoot>tr>th{Total de Habitantes}+td{0000}, então tab 
+
+div.bloco*3, então tab 
+
+
+Comentários
+Ao invés de botar o { height: 98vh; } para não aparecer a barrar de rolagem, basta colocar normalmente { height: 100vh; } e acrescentar a declaração { margin: 0px; } no interior do seletor body. Assim não é preciso ficar testando os valores de vh para cada navegador, devices e suas variações.
+.
+O que faz aparecer a barra de rolagem é o body que vem com uma margem padrão. Ao colocar o height do body, que está com a imagem, para 100% da área de visão, o navegador acrescenta mais um espaço em branco que é essa margem, portanto a rolagem aparece, porque o body passa a ocupar 100% da área do navegaor + margem. Depois é só centralizar a imagem com { background-position: center center; }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,8 @@
 
         table {
             border-collapse: collapse;
+            /* colocando cabeçalho fixo  */
+            position: relative;
         }
 
         caption {
@@ -19,12 +22,39 @@
             padding: 10px;
         }
 
-        th, td {
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        th,
+        td {
             border: 1px solid gray;
             padding: 10px;
         }
+
+        tbody>tr:nth-child(even) {
+            background-color: rgb(0, 110, 255);
+        }
+        tbody>tr:nth-child(even):hover {
+            background-color: rgba(0, 110, 255, 0.367);
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: rgb(255, 145, 0);
+        }
+
+        tbody>tr:nth-child(odd):hover {
+            background-color: rgba(255, 145, 0, 0.367);
+        }
+/* 
+        tr:hover {
+            background-color: blue;
+        } */
     </style>
 </head>
+
 <body>
     <h1>Exercício de Tabelas</h1>
     <table>
@@ -40,6 +70,7 @@
         </thead>
         <tfoot>
             <tr>
+                <!-- nota que apesar do total ter sido classificado com colspan 4 ele nao agrupa mais de uma celula,logo scope dele e row e nao rowgroup -->
                 <th colspan="4" scope="row">Total</th>
                 <td>1000</td>
             </tr>
@@ -65,7 +96,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3" scope="rowgroup">Homens</th>
+                <th rowspan="30" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -83,7 +114,205 @@
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
             </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
         </tbody>
     </table>
+
+    <div style="width: 400px; border: 10px solid black; padding: 5px; margin-top: 20px;">
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt praesentium rerum quas nisi
+            omnis molestias magni eum atque debitis, voluptate dolorum voluptates deleniti quaerat? At cum soluta fugiat
+            atque.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestiae molestias ea. Maiores nihil cum
+            aut corrupti consequatur laboriosam a consequuntur libero quisquam suscipit, iusto voluptatum voluptates
+            quia necessitatibus provident.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex placeat quam hic ipsa eligendi et,
+            officiis veritatis debitis alias doloremque est autem quod ipsum accusamus aliquid voluptate magnam
+            consectetur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo minima vel numquam. Deleniti
+            molestiae corporis omnis! Fugiat nihil modi totam alias nesciunt tempora veritatis voluptatibus quasi dolore
+            officiis. Est?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt praesentium rerum quas nisi
+            omnis molestias magni eum atque debitis, voluptate dolorum voluptates deleniti quaerat? At cum soluta fugiat
+            atque.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestiae molestias ea. Maiores nihil cum
+            aut corrupti consequatur laboriosam a consequuntur libero quisquam suscipit, iusto voluptatum voluptates
+            quia necessitatibus provident.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex placeat quam hic ipsa eligendi et,
+            officiis veritatis debitis alias doloremque est autem quod ipsum accusamus aliquid voluptate magnam
+            consectetur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo minima vel numquam. Deleniti
+            molestiae corporis omnis! Fugiat nihil modi totam alias nesciunt tempora veritatis voluptatibus quasi dolore
+            officiis. Est?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt praesentium rerum quas nisi
+            omnis molestias magni eum atque debitis, voluptate dolorum voluptates deleniti quaerat? At cum soluta fugiat
+            atque.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestiae molestias ea. Maiores nihil cum
+            aut corrupti consequatur laboriosam a consequuntur libero quisquam suscipit, iusto voluptatum voluptates
+            quia necessitatibus provident.
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ex placeat quam hic ipsa eligendi et,
+            officiis veritatis debitis alias doloremque est autem quod ipsum accusamus aliquid voluptate magnam
+            consectetur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo minima vel numquam. Deleniti
+            molestiae corporis omnis! Fugiat nihil modi totam alias nesciunt tempora veritatis voluptatibus quasi dolore
+            officiis. Est?
+
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, consectetur distinctio? Quia, fugit
+            aliquam eveniet voluptas sequi quae magni et provident fuga vero voluptatem odio ducimus libero similique
+            voluptates corporis.
+        </p>
+    </div>
 </body>
+
 </html>
