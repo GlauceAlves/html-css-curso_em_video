@@ -23,37 +23,67 @@
             font-size: 2em;
             margin: 20px 5px;
             padding: 10px;
+            background-color: rgba(255, 255, 255, 0.526);
         }
 
-        h2 {
+        main {
             text-align: center;
-            font-size: 1.2em;
-            padding: 10px;
+
         }
 
         div.iframe-container {
-            justify-content: center;
-            background-color: rgb(85, 255, 0);
-            width: 70%;
-            margin: auto;
-        }
-
-        div.iframe-item {
-            background-color: transparent;
+            background-color: white;
             box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
             border-radius: 10px;
+            margin: 10px 10px;
+            display: inline-block;
+            width: 500px;
+            height: 600px;
+            justify-content: center;
+            position: relative;
+
         }
 
+        div.iframe-container iframe {
+            position: absolute;
+            width: 100%;
+            border-radius: 0px, 0px, 10px 10px;
+            top: 7%;
+            height: calc(85%);
+            transform: translate(-50.0%, 0%);
+        }
+
+        
+        div.iframe-container img {
+            position: absolute;
+            border-radius: 35px 30px;
+            width: 35px;
+            transform: translate(-600%, 12%);
+   
+        }
+
+        h2 {
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: rgb(246, 245, 244);
+            border-radius: 10px 10px 0px 0px;
+            width: 96%;
+        }
+
+        img{
+            border-radius: 35px 30px;
+            width: 35px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Testando o uso de um iframe</h1>
-    <div class="iframe-container">
-
-        <div class="iframe-item">
+    <h1><a href="https://www.instagram.com/glaucecostaalves" target="_blank">Glauce Alves</a></h1>
+    <main>
+        <div class="iframe-container">
+            <img src="imagens/alfinete.png" alt="alfinete">
             <h2>Acesse o site da <a href="https://darkred-quail-279024.hostingersite.com/public/home.php"
-                    target="_blank"><strong> >> Lidia Gomes </strong></a></h2>
+                    target="_blank"><strong> Lidia Gomes </strong></a></h2>
 
             <!-- por mais que voce tenha configuraçoes no iframe vale as confuguraçoes do Css como soberana  -->
             <!-- auto , yes mesmo que o conteudo couber vai aparecer a rolagem , no nao permite a rolagem   -->
@@ -62,18 +92,20 @@
                 visualizar</iframe>
         </div>
         <!-- ou o testo aparecer dentro do frame  -->
-        <div class="iframe-item">
-            <h2>Acessando o repositorio da Glauce</h2>
+        <div class="iframe-container">
+            <img src="imagens/alfinete.png" alt="alfinete">
+            <h2>Androide em repositorio da Glauce Alves</h2>
             <iframe src="https://glaucealves.github.io/android/" frameborder="0"><a href="https://glaucealves.github.io"
                     target="_blank" scolling="yes"> Glauce Alves GitHub</a></iframe>
         </div>
 
-        <div class="iframe-item">
-            <h2>Acessando o repositorio da Glauce</h2>
-            <iframe src="https://glaucealves.github.io/android/" frameborder="0"><a href="https://glaucealves.github.io"
+        <div class="iframe-container">
+            <img src="imagens/alfinete.png" alt="alfinete">
+            <h2>Cordel em repositorio da Glauce Alves</h2>
+            <iframe src="https://glaucealves.github.io/cordel_moderno/" frameborder="0"><a href="https://glaucealves.github.io"
                     target="_blank" scolling="yes"> Glauce Alves GitHub</a></iframe>
         </div>
-    </div>
+    </main>
 
 </body>
 
