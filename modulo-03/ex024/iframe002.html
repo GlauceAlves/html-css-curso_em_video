@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos iframe</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 1em;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        iframe {
+            border: 2px solid blueviolet;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Testando o uso de um iframe</h1>
+    
+    <p style="text-align: center;">
+        Acessando o site da <a href="https://darkred-quail-279024.hostingersite.com/public/home.php"
+            target="_blank"><strong> >> Lidia Gomes </strong></a>
+
+        <!-- por mais que voce tenha configuraçoes no iframe vale as confuguraçoes do Css como soberana  -->
+        <!-- auto , yes mesmo que o conteudo couber vai aparecer a rolagem , no nao permite a rolagem   -->
+        <iframe src="https://darkred-quail-279024.hostingersite.com/public/home.php" frameborder="0" height="500"
+            width="500" scolling="no"> Não foi possivel carregar a informaçao, clique em Lidia Gomes para
+            visualizar</iframe>
+        para testar conhecimentos.
+    </p>
+    <!-- ou o testo aparecer dentro do frame  -->
+    <p style="text-align: center;">
+        Acessando o repositorio da Glauce
+        <iframe src="https://glaucealves.github.io/android/" frameborder="0"><a href="https://glaucealves.github.io"
+                target="_blank"> Glauce Alves GitHub</a></iframe>
+        para visualizar
+    </p>
+
+</body>
+
+</html>

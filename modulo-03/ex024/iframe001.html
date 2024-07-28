@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos iframe</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 1em;
+        }
+
+        body {
+            background-image: url('./imagens/wallpaper001.jpg');
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin: 20px 5px;
+            padding: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        div.iframe-container {
+            justify-content: center;
+            background-color: rgb(85, 255, 0);
+            width: 70%;
+            margin: auto;
+        }
+
+        div.iframe-item {
+            background-color: transparent;
+            box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <div class="iframe-container">
+
+        <div class="iframe-item">
+            <h2>Acesse o site da <a href="https://darkred-quail-279024.hostingersite.com/public/home.php"
+                    target="_blank"><strong> >> Lidia Gomes </strong></a></h2>
+
+            <!-- por mais que voce tenha configuraçoes no iframe vale as confuguraçoes do Css como soberana  -->
+            <!-- auto , yes mesmo que o conteudo couber vai aparecer a rolagem , no nao permite a rolagem   -->
+            <iframe src="https://darkred-quail-279024.hostingersite.com/public/home.php" frameborder="0" scolling="yes">
+                Não foi possivel carregar a informaçao, clique em Lidia Gomes para
+                visualizar</iframe>
+        </div>
+        <!-- ou o testo aparecer dentro do frame  -->
+        <div class="iframe-item">
+            <h2>Acessando o repositorio da Glauce</h2>
+            <iframe src="https://glaucealves.github.io/android/" frameborder="0"><a href="https://glaucealves.github.io"
+                    target="_blank" scolling="yes"> Glauce Alves GitHub</a></iframe>
+        </div>
+
+        <div class="iframe-item">
+            <h2>Acessando o repositorio da Glauce</h2>
+            <iframe src="https://glaucealves.github.io/android/" frameborder="0"><a href="https://glaucealves.github.io"
+                    target="_blank" scolling="yes"> Glauce Alves GitHub</a></iframe>
+        </div>
+    </div>
+
+</body>
+
+</html>
