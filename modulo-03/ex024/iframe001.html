@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos iframe</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap');
+
+        @font-face {
+            font-family: 'Russo';
+            src: url('font/PlaywriteHRLijeva-VariableFont_wght.ttf') format('truetype');
+        }
+
         * {
             margin: 0px;
             padding: 0px;
@@ -13,22 +20,39 @@
         }
 
         body {
+            text-align: center;
             background-image: url('./imagens/wallpaper001.jpg');
             width: 100vw;
             height: 100vh;
         }
 
         h1 {
-            text-align: center;
+            font-family: 'Playwrite AR';
             font-size: 2em;
-            margin: 20px 5px;
+            margin: 20px 0px;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.526);
+            display: inline-block;
+            /* background-color: rgba(255, 255, 255, 0.526); */
         }
 
         main {
             text-align: center;
 
+        }
+
+        a {
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        a:hover {
+            text-decoration: dashed;
+            color: white;
+        }
+
+        img {
+            display: inline-block;
+           
         }
 
         div.iframe-container {
@@ -53,13 +77,13 @@
             transform: translate(-50.0%, 0%);
         }
 
-        
+
         div.iframe-container img {
             position: absolute;
             border-radius: 35px 30px;
             width: 35px;
             transform: translate(-600%, 12%);
-   
+
         }
 
         h2 {
@@ -70,7 +94,7 @@
             width: 96%;
         }
 
-        img{
+        img {
             border-radius: 35px 30px;
             width: 35px;
         }
@@ -78,7 +102,9 @@
 </head>
 
 <body>
-    <h1><a href="https://www.instagram.com/glaucecostaalves" target="_blank">Glauce Alves</a></h1>
+    <!-- <h1>instagram</h1>
+    <img src="imagens/alfinete.png" alt="alfinete"> -->
+    <h1><a href="https://www.instagram.com/glaucecostaalves" target="_blank">Glauce Alvees</a></h1>
     <main>
         <div class="iframe-container">
             <img src="imagens/alfinete.png" alt="alfinete">
@@ -102,8 +128,9 @@
         <div class="iframe-container">
             <img src="imagens/alfinete.png" alt="alfinete">
             <h2>Cordel em repositorio da Glauce Alves</h2>
-            <iframe src="https://glaucealves.github.io/cordel_moderno/" frameborder="0"><a href="https://glaucealves.github.io"
-                    target="_blank" scolling="yes"> Glauce Alves GitHub</a></iframe>
+            <iframe src="https://glaucealves.github.io/cordel_moderno/" frameborder="0"><a
+                    href="https://glaucealves.github.io" target="_blank" scolling="yes"> Glauce Alves
+                    GitHub</a></iframe>
         </div>
     </main>
 
